@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 import edu.wpi.first.wpilibj2.command.Subsystem;
 import org.jetbrains.annotations.NotNull;
 import org.usfirst.frc.team449.robot.drive.unidirectional.DriveUnidirectional;
-import org.usfirst.frc.team449.robot.other.Clock;
+import org.usfirst.frc.team449.robot.utility.Clock;
 
 /** Go at a certain velocity for a set number of seconds */
 @JsonIdentityInfo(generator = ObjectIdGenerators.StringIdGenerator.class)

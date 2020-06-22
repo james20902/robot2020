@@ -12,11 +12,10 @@ import edu.wpi.first.wpilibj.SerialPort;
 import io.github.oblarg.oblog.Loggable;
 import io.github.oblarg.oblog.annotations.Log;
 import org.jetbrains.annotations.Contract;
-import org.usfirst.frc.team449.robot.generalInterfaces.updatable.Updatable;
 
 /** A Jackson-compatible, invertible wrapper for the NavX. */
 @JsonIdentityInfo(generator = ObjectIdGenerators.StringIdGenerator.class)
-public class MappedAHRS implements Updatable, Loggable {
+public class MappedAHRS implements Loggable {
 
   /** The AHRS this class is a wrapper on. */
   protected final AHRS ahrs;
@@ -205,62 +204,4 @@ public class MappedAHRS implements Updatable, Loggable {
     return cachedPitch;
   }
 
-  //    /**
-  //     * Get the headers for the data this subsystem logs every loop.
-  //     *
-  //     * @return An N-length array of String labels for data, where N is the length of the
-  // Object[] returned by getData().
-  //     */
-  //    @NotNull
-  //    @Override
-  //    public String[] getHeader() {
-  //        return new String[]{
-  //                "heading",
-  //                "angular_displacement",
-  //                "angular_vel",
-  //                "x_accel",
-  //                "y_accel",
-  //                "pitch"
-  //        };
-  //    }
-  //
-  //    /**
-  //     * Get the data this subsystem logs every loop.
-  //     *
-  //     * @return An N-length array of Objects, where N is the number of labels given by getHeader.
-  //     */
-  //    @NotNull
-  //    @Override
-  //    public Object[] getData() {
-  //        return new Object[]{
-  //                getCachedHeading(),
-  //                getCachedAngularDisplacement(),
-  //                getCachedAngularVelocity(),
-  //                getCachedXAccel(),
-  //                getCachedYAccel(),
-  //                getCachedPitch()
-  //        };
-  //    }
-  //
-  //    /**
-  //     * Get the name of this object.
-  //     *
-  //     * @return A string that will identify this object in the log file.
-  //     */
-  //    @NotNull
-  //    @Override
-  //    public String getLogName() {
-  //        return "AHRS";
-  //    }
-
-  /** Updates all cached values with current ones. */
-  @Override
-  public void update() {
-    cachedHeading = getHeading();
-    cachedAngularDisplacement = getAngularDisplacement();
-    cachedAngularVel = getAngularVelocity();
-    cachedXAccel = getXAccel();
-    cachedYAccel = getYAccel();
-    cachedPitch = getPitch();
-  }
 }

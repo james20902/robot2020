@@ -12,8 +12,8 @@ import edu.wpi.first.wpilibj2.command.Subsystem;
 import java.util.function.DoubleSupplier;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.usfirst.frc.team449.robot.other.BufferTimer;
-import org.usfirst.frc.team449.robot.other.Clock;
+import org.usfirst.frc.team449.robot.utility.BufferTimer;
+import org.usfirst.frc.team449.robot.utility.Clock;
 import org.usfirst.frc.team449.robot.subsystem.interfaces.analogMotor.SubsystemAnalogMotor;
 
 @JsonIdentityInfo(generator = ObjectIdGenerators.StringIdGenerator.class)

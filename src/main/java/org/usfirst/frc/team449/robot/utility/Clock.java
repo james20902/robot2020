@@ -1,4 +1,4 @@
-package org.usfirst.frc.team449.robot.other;
+package org.usfirst.frc.team449.robot.utility;
 
 import org.jetbrains.annotations.Contract;
 

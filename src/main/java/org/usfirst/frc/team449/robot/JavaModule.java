@@ -28,7 +28,5 @@ public class JavaModule extends SimpleModule {
     context.setMixInAnnotations(
         DoubleUnaryOperator.class, UseCLASSIncludeWRAPPER_OBJECTMixIn.class);
     context.setMixInAnnotations(Runnable.class, UseCLASSIncludeWRAPPER_OBJECTMixIn.class);
-
-    //        context.setMixInAnnotations(Loggable.class, LoggableMixIn.class);
   }
 }

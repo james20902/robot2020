@@ -10,7 +10,7 @@ import io.github.oblarg.oblog.annotations.Log;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.usfirst.frc.team449.robot.other.BufferTimer;
+import org.usfirst.frc.team449.robot.utility.BufferTimer;
 import org.usfirst.frc.team449.robot.subsystem.interfaces.AHRS.SubsystemAHRS;
 
 /** A command that uses a AHRS to turn to a certain angle. */

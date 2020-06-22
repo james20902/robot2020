@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import io.github.oblarg.oblog.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.usfirst.frc.team449.robot.other.Clock;
+import org.usfirst.frc.team449.robot.utility.Clock;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.FileReader;

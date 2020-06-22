@@ -1,6 +1,6 @@
 package org.usfirst.frc.team449.robot.jacksonWrappers;
 
-import static org.usfirst.frc.team449.robot.other.Util.getLogPrefix;
+import static org.usfirst.frc.team449.robot.utility.Util.getLogPrefix;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;

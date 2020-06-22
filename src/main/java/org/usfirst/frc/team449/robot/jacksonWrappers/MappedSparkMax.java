@@ -251,8 +251,6 @@ public class MappedSparkMax implements SmartMotor {
         slave.setMasterSpark(this.spark, enableBrakeMode);
       }
     }
-
-    this.spark.burnFlash();
   }
 
   @Override

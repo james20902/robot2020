@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.Subsystem;
 import java.util.function.BooleanSupplier;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.usfirst.frc.team449.robot.other.Clock;
+import org.usfirst.frc.team449.robot.utility.Clock;
 
 /** Runs one of two commands the first tick on which the given condition becomes true. */
 @JsonIdentityInfo(generator = ObjectIdGenerators.StringIdGenerator.class)

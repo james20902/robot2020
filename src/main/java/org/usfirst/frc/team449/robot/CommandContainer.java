@@ -7,7 +7,7 @@ import io.github.oblarg.oblog.Loggable;
 import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.usfirst.frc.team449.robot.oi.buttons.CommandButton;
-import org.usfirst.frc.team449.robot.other.DefaultCommand;
+import org.usfirst.frc.team449.robot.utility.DefaultCommand;
 
 /**
  * A container class that holds all the commands on the robot, for cleanliness in the map and so

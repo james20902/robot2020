@@ -1,6 +1,6 @@
 package org.usfirst.frc.team449.robot.generalInterfaces;
 
-import static org.usfirst.frc.team449.robot.other.Util.getLogPrefix;
+import static org.usfirst.frc.team449.robot.utility.Util.getLogPrefix;
 
 import com.ctre.phoenix.motorcontrol.ControlFrame;
 import com.ctre.phoenix.motorcontrol.FeedbackDevice;
@@ -35,7 +35,7 @@ import org.usfirst.frc.team449.robot.jacksonWrappers.SlaveSparkMax;
 import org.usfirst.frc.team449.robot.jacksonWrappers.SlaveTalon;
 import org.usfirst.frc.team449.robot.jacksonWrappers.SlaveVictor;
 import org.usfirst.frc.team449.robot.jacksonWrappers.simulated.FPSSmartMotorSimulated;
-import org.usfirst.frc.team449.robot.other.Updater;
+import org.usfirst.frc.team449.robot.utility.Updater;
 
 /**
  * A motor with built in advanced capability featuring encoder, current limiting, and gear shifting

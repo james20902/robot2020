@@ -21,12 +21,6 @@ public class RobotMap {
 
   @NotNull private final MotorContainer motors = MotorContainer.getInstance();
 
-  //    /**
-  //     * The logger for recording events and telemetry data.
-  //     */
-  //    @NotNull
-  //    private final Logger logger;
-
   /** A runnable that updates cached variables. */
   @NotNull private final java.lang.Runnable updater;
 

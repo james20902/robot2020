@@ -3,6 +3,7 @@ package org.usfirst.frc.team449.robot.commands.multiInterface.limelight;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import edu.wpi.first.wpilibj2.command.Command;
+import edu.wpi.first.wpilibj2.command.PrintCommand;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import org.jetbrains.annotations.NotNull;
 import org.usfirst.frc.team449.robot.commands.limelight.SetPipeline;
@@ -31,10 +32,13 @@ public class ScanThenTurn extends SequentialCommandGroup {
       @NotNull @JsonProperty(required = true) UnidirectionalNavXDefaultDrive driveCommand,
       @NotNull @JsonProperty(required = true) Command limelightCommand,
       @JsonProperty(required = true) int driverPipe) {
-    addCommands(
+    addCommands(new PrintCommand("started scanturn command"),
         new SetPipeline(scannerPipe),
+        new PrintCommand("set pipeline, driver control as usual"),
         driveCommand.withInterrupt(LimelightComponent::hasTarget),
+        new PrintCommand("target found, executing next command"),
         limelightCommand,
+        new PrintCommand(("executed, returning to driver control")),
         new SetPipeline(driverPipe));
   }
 }
